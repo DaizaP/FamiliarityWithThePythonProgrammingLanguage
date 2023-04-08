@@ -23,6 +23,7 @@ Petya = int(s / 6)
 Sergey = int(Petya)
 Kate = int(Petya * 4)
 print(s, '->', '({} + {} + {})'.format(Petya, Kate, Sergey))
+time.sleep(0.5)
 
 print('Второй вариант решения')
 Petya = random.randint(10, 20)
