@@ -4,8 +4,9 @@
 # 100 -> 1 (1 + 0 + 0)
 # Решил сделать рандом
 import random
+
 i = 0
-while(i < 5):
+while i < 5:
     num = random.randint(100, 999)
     num = str(num)
     res = int(num[0]) + int(num[1]) + int(num[2])

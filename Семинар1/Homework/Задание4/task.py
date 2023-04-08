@@ -8,9 +8,10 @@
 # 24 -> 4  16  4
 # 60 -> 10  40  10
 import random
+
 # 6 частей. 1 Петя. 1 Сергей. 4 Катя(в два раза больше чем Сергей и Петя)
 Petya = random.randint(10, 100)
 Sergey = int(Petya)
-Kate = int(Petya*4)
-s = int(Sergey+Petya+Kate)
-print(s, '->','({} + {} + {})'.format(Petya, Kate, Sergey))
+Kate = int(Petya * 4)
+s = int(Sergey + Petya + Kate)
+print(s, '->', '({} + {} + {})'.format(Petya, Kate, Sergey))
