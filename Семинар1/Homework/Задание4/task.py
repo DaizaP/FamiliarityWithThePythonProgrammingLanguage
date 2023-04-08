@@ -8,9 +8,23 @@
 # 24 -> 4  16  4
 # 60 -> 10  40  10
 import random
+import time
 
 # 6 частей. 1 Петя. 1 Сергей. 4 Катя(в два раза больше чем Сергей и Петя)
-Petya = random.randint(10, 100)
+s = random.randint(10, 100)
+# Ищем число, которое будет нацело делится на шесть частей(иначе дети будут делать не целое кол-во журавликов)
+while s % 6 != 0:
+    print('Сгенерированное число', s, 'не подходит, выбираем другое')
+    time.sleep(0.5)
+    s = random.randint(10, 100)
+print('Число', s, 'подходит')
+time.sleep(1)
+Petya = int(s / 6)
+Sergey = int(Petya)
+Kate = int(Petya * 4)
+print(s, '->', '({} + {} + {})'.format(Petya, Kate, Sergey))
+print('Второй вариант решения')
+Petya = random.randint(10, 20)
 Sergey = int(Petya)
 Kate = int(Petya * 4)
 s = int(Sergey + Petya + Kate)
