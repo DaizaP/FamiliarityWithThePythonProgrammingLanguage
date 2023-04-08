@@ -12,25 +12,17 @@ choise = input('Выберите ручной ввод или автоматич
 choise = choise.lower()
 while choise != 'n':
     if choise == 'ручной':
-        n = int(input('Введите шестизначный номер билета: '))
-        n = str(n)
-        if (int(n[0]) + int(n[1]) + int(n[2])) == (int(n[3]) + int(n[4]) + int(n[5])):
-            print(n, '->', 'Yes')
-            break
-        else:
-            print(n, '->', 'No')
-            break
+        n = input('Введите шестизначный номер билета: ')
+        print(n, '-> Yes' if (int(n[0]) + int(n[1]) + int(n[2])) ==
+                             (int(n[3]) + int(n[4]) + int(n[5])) else '-> No')
+        break
     elif choise == 'авто':
-        n = random.randint(100000, 999999)
-        n = str(n)
-        if (int(n[0]) + int(n[1]) + int(n[2])) == (int(n[3]) + int(n[4]) + int(n[5])):
-            print(n, '->', 'Yes')
-        else:
-            print(n, '->', 'No')
-        while (int(n[0]) + int(n[1]) + int(n[2])) != (int(n[3]) + int(n[4]) + int(n[5])):
-            n = int(n)
-            n = random.randint(100000, 999999)
-            n = str(n)
+        n = str(random.randint(100000, 999999))  # перевожу в строку, так короче и проще
+        print(n, '-> Yes' if (int(n[0]) + int(n[1]) + int(n[2])) ==
+                             (int(n[3]) + int(n[4]) + int(n[5])) else '-> No')
+        while (int(n[0]) + int(n[1]) + int(n[2])) != \
+                (int(n[3]) + int(n[4]) + int(n[5])):
+            n = str(random.randint(100000, 999999))
         print(n, '->', 'Yes')
         break
     else:

@@ -21,7 +21,5 @@ while i < len(r1):
         b = bool(1)
     i += 1
 
-if b:
-    print(chocLength, chocWidth, slices, '-> yes')
-else:
-    print(chocLength, chocWidth, slices, '-> no')
+print(chocLength, chocWidth, slices, '-> yes' if b else '-> no')
+

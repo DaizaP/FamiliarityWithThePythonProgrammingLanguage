@@ -7,8 +7,8 @@ import random
 
 i = 0
 while i < 5:
-    num = random.randint(100, 999)
-    num = str(num)
+    num = str(random.randint(100, 999))
+    # print(num // 100, num // 10 % 10, num % 10) решил, что удобнее через строку
     res = int(num[0]) + int(num[1]) + int(num[2])
     print(num, '->', res, end=' ')
     print('({} + {} + {})'.format(num[0], num[1], num[2]))

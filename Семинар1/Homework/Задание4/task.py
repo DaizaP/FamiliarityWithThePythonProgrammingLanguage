@@ -25,7 +25,7 @@ Kate = int(Petya * 4)
 print(s, '->', '({} + {} + {})'.format(Petya, Kate, Sergey))
 time.sleep(0.5)
 
-print('Второй вариант решения')
+print('Второй вариант решения')  # Через Петю
 Petya = random.randint(10, 20)
 Sergey = int(Petya)
 Kate = int(Petya * 4)
