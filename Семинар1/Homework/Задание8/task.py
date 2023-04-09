@@ -5,21 +5,7 @@
 # 3 2 1 -> no
 chocLength = int(input('Введите длину шоколадки: '))
 chocWidth = int(input('И ширину: '))
-r = range(chocLength, chocWidth * chocLength, chocLength)
-r1 = range(chocWidth, chocWidth * chocLength, chocWidth)
 slices = int(input('Введите кол-во долек, которые вы хотите отломить: '))
-b = bool(0)
-i = 0
-while i < len(r):
-    if r[i] == slices:
-        b = bool(1)
-    i += 1
-
-i = 0
-while i < len(r1):
-    if r1[i] == slices:
-        b = bool(1)
-    i += 1
-
-print(chocLength, chocWidth, slices, '-> yes' if b else '-> no')
-
+print(chocLength, chocWidth, slices, '-> yes'
+if slices % chocWidth == 0 or slices % chocLength == 0
+   and slices < chocLength * chocWidth else '-> no')
