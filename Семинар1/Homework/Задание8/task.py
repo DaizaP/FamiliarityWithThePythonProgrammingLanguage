@@ -7,5 +7,4 @@ chocLength = int(input('Введите длину шоколадки: '))
 chocWidth = int(input('И ширину: '))
 slices = int(input('Введите кол-во долек, которые вы хотите отломить: '))
 print(chocLength, chocWidth, slices, '-> yes'
-if slices % chocWidth == 0 or slices % chocLength == 0
-   and slices < chocLength * chocWidth else '-> no')
+if slices % chocWidth == 0 or slices % chocLength == 0 and slices < chocLength * chocWidth else '-> no')
