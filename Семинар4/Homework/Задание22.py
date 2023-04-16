@@ -8,9 +8,9 @@
 # 3 6 9 12 15 18
 # 6 12
 from random import randint
-n = list(input('Введите длину последовательностей через пробел:').split())
-myList1 = list(input('Введите ' + n[0] + ' чисел через пробел:').split())  # Раз в условии юзер вводит, то пусть вводит
-myList2 = list(input('Введите ' + n[1] + ' чисел через пробел:').split())  # Раз в условии юзер вводит, то пусть вводит
+n = list(input('Ввод:').split())
+myList1 = list(input('1.').split())  # Раз в условии юзер вводит, то пусть вводит
+myList2 = list(input('2.').split())  # Раз в условии юзер вводит, то пусть вводит
 # Output ↓
 print(' '.join(n))
 print(*myList1)
