@@ -11,6 +11,5 @@ def pow1(nums, ext):
     return nums * pow1(nums, ext - 1)  # По сути рекурсивное возведение раскладывается на 2 * 2 * 2 * 2 * 1
 
 
-res1 = 0
 res1 = pow1(2, 10)
 print(res1)
