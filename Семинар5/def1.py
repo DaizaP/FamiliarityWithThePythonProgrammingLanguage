@@ -10,6 +10,13 @@ def fib(n):
         print(i, temp[i])
 
 
+def fib1(n):
+    if n < 2:
+        return n
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+
 def max_in_min(array):
     max1 = max(array)
     for j in range(len(array)):
